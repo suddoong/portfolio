@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     outline-style: none;
-    
+
 }
 
 ul,
@@ -212,6 +212,7 @@ body {
     position: relative;
     width: 800px;
     height: 832px;
+    margin-bottom: 25px;
 }
 
 .txt_k {
@@ -269,17 +270,17 @@ body {
 
 .first li {
     position: relative;
-/*    position: absolute;*/
+    /*    position: absolute;*/
     display: inline-block;
-/*    float: left;*/
+    /*    float: left;*/
     width: calc(50% - 18px);
     height: auto;
-/*    padding-bottom: calc(50% - 18px);*/
+    /*    padding-bottom: calc(50% - 18px);*/
 }
 
 .img1 {
-/*    position: absolute;*/
-/*    top: 35px;*/
+    /*    position: absolute;*/
+    /*    top: 35px;*/
     display: block;
     background: url('../images/thum1.jpg') no-repeat center;
     width: 100%;
@@ -306,14 +307,14 @@ body {
     text-transform: uppercase;
 }
 
-.tit:hover {
+.pro1>.tit:hover {
     color: #FF6B17;
 }
 
 .pro1 .txt {
     position: absolute;
     bottom: -16px;
-    transform: translate(-50%,100%);
+    transform: translate(-50%, 100%);
     left: 50%;
     font-size: 16px;
     color: #999;
@@ -342,9 +343,10 @@ body {
 .pro2 {
     right: 0px;
 }
+
 .img2 {
-/*    position: absolute;*/
-/*    top: 35px;*/
+    /*    position: absolute;*/
+    /*    top: 35px;*/
     display: block;
     background: url('../images/thum2.jpg') no-repeat center;
     width: 100%;
@@ -368,7 +370,7 @@ body {
 .pro2 .txt {
     position: absolute;
     bottom: -16px;
-    transform: translate(-50%,100%);
+    transform: translate(-50%, 100%);
     left: 50%;
     font-size: 16px;
     color: #999;
@@ -415,8 +417,8 @@ body {
 }
 
 .img1 {
-/*    position: absolute;*/
-/*    top: 35px;*/
+    /*    position: absolute;*/
+    /*    top: 35px;*/
     display: block;
     background: url('../images/thum1.jpg') no-repeat center;
     width: 100%;
@@ -440,7 +442,7 @@ body {
 .pro3 .txt {
     position: absolute;
     bottom: -16px;
-    transform: translate(-50%,100%);
+    transform: translate(-50%, 100%);
     left: 50%;
     font-size: 16px;
     color: #999;
@@ -523,4 +525,134 @@ body {
 
 .copy:hover {
     color: #FF6B17;
+}
+
+/*어바웃*/
+
+.bg_b {
+    background: #000;
+    height: auto;
+}
+
+.main_txt_a {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: 832px;
+    white-space: nowrap;
+    margin-bottom: 25px;
+}
+
+.txt_k_a {
+    position: absolute;
+    top: 570px;
+    left: 35px;
+    font-family: 'Pretendard';
+    font-weight: 200;
+    color: #fff;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+.txt_e_a {
+    position: absolute;
+    top: 722px;
+    left: 35px;
+    font-family: 'Pretendard';
+    font-weight: 100;
+    color: #999;
+    font-size: 22px;
+    line-height: 44px;
+}
+
+.main_box {
+    position: relative;
+    display: block;
+}
+
+.img_box {
+    position: absolute;
+    top: 273px;
+    right: 0px;
+    width: 36%;
+    height: auto;
+}
+
+.img_me {
+    position: absolute;
+    right: 35px;
+    bottom: -555px;
+    display: block;
+    background: url('../images/me.jpg') no-repeat center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+}
+
+.black {
+    color: #fff;
+}
+
+.copy_l {
+    left: 35px;
+    transform: translateX(0%);
+    color: #fff;
+}
+
+.con {
+    position: relative;
+    display: block;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 58px;
+}
+
+.con_box {
+    position: relative;
+    display: block;
+}
+
+.left {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.con_tit,
+.email,
+.ins,
+.link,
+.re {
+    position: relative;
+    display: block;
+}
+
+.con_tit {
+    font-size: 18px;
+    color: #999;
+    font-family: 'Pretendard';
+    font-weight: 200;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 65px;
+}
+
+.email,
+.ins,
+.link,
+.re {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Pretendard';
+    font-weight: 200;
+    padding: 14px 0px 14px 0px;
+}
+
+.right {
+    position: absolute;
+    top: 0px;
+    display: inline-block;
+    width: 50%;
+    text-align: right;
 }
