@@ -1,0 +1,13 @@
+@charset 'utf-8';
+/* pc 버전 */
+@media all and (max-width: 1300px) {
+}
+/* 랩탑 버전 */
+@media all and (max-width: 1024px) {
+}
+/* 타블렛 버전 */
+@media all and (max-width: 768px) {
+}
+/* 모바일 버전 */
+@media all and (max-width: 480px) {
+}

@@ -1,0 +1,525 @@
+@charset 'utf-8';
+@import url('font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'founders_groteskbold', 'founders_grotesklight', 'founders_groteskmedium', 'founders_groteskregular', 'founders_grotesksemibold''Pretendard', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    letter-spacing: -0.05rem;
+
+}
+
+/* 드래그 색상 변경 */
+::selection {
+    *background: #FF6B17;
+    /* Firefox */
+    background: #FF6B17;
+    /* Safari */
+    color: #fff;
+}
+
+::-moz-selection {
+    *background: #FF6B17;
+    /* Firefox */
+    background: #FF6B17;
+    /* Firefox */
+    color: #fff;
+}
+
+/*모바일 메뉴*/
+/*.hm {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 99999999;
+}
+
+.hm span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+}
+.hm span:nth-child(2) {
+    top: 50%;
+}
+.hm span:nth-child(3) {
+    top: 100%;
+}
+*/
+/*.hm_wrap {
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 9999999;
+    transition: left .3s;
+}
+
+.hm_wrap_focus {
+    left: 0%;
+}
+
+.mainmenu{}
+.mainmenu li{}
+.mainmenu a{
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}*/
+/* 위로 바로가기 */
+.gotop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999999;
+    border-radius: 100%;
+}
+
+.gotop:hover {
+    background: #FF6B17;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+
+.pagew {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'founders_grotesklight';
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #FF6B17;
+}
+
+.saying {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #999;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'founders_grotesklight';
+}
+
+.mainmenu {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mainmenu li {
+    position: relative;
+    right: 0px;
+    display: inline-block;
+    padding-left: 44px;
+}
+
+.mainmenu li a {
+    position: relative;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'founders_grotesklight';
+    cursor: pointer;
+}
+
+.mainmenu li a:before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 57%;
+    transform: translateY(-50%);
+    background: url('../images/star.png') no-repeat center;
+    width: 12px;
+    height: 12px;
+}
+
+.mainmenu li a:hover {
+    opacity: .6;
+}
+
+.main_txt {
+    position: relative;
+    width: 800px;
+    height: 832px;
+}
+
+.txt_k {
+    position: absolute;
+    top: 570px;
+    left: 35px;
+    font-family: 'Pretendard';
+    font-weight: 200;
+    color: #2D2D2D;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+.txt_k:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 56px;
+    background: url('../images/hi.png') no-repeat center;
+    width: 36px;
+    height: 36px;
+}
+
+.txt_e {
+    position: absolute;
+    top: 722px;
+    left: 35px;
+    font-family: 'Pretendard';
+    font-weight: 100;
+    color: #999;
+    font-size: 22px;
+    line-height: 44px;
+}
+
+.contents {
+    position: relative;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+
+.list {
+    display: block;
+}
+
+.first {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    margin-bottom: 120px;
+}
+
+.first li {
+    position: relative;
+/*    position: absolute;*/
+    display: inline-block;
+/*    float: left;*/
+    width: calc(50% - 18px);
+    height: auto;
+/*    padding-bottom: calc(50% - 18px);*/
+}
+
+.img1 {
+/*    position: absolute;*/
+/*    top: 35px;*/
+    display: block;
+    background: url('../images/thum1.jpg') no-repeat center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    transition: .3s;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    transform: scale(.97);
+}
+
+.pro1 .tit {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    left: 0px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'founders_groteskregular';
+    text-transform: uppercase;
+}
+
+.tit:hover {
+    color: #FF6B17;
+}
+
+.pro1 .txt {
+    position: absolute;
+    bottom: -16px;
+    transform: translate(-50%,100%);
+    left: 50%;
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+.pro1 .year {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    right: 0px;
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+.line {
+    background: #bbbbbb;
+    height: 1px;
+    border: 0px;
+    margin-bottom: 35px;
+}
+
+.pro2 {
+    right: 0px;
+}
+.img2 {
+/*    position: absolute;*/
+/*    top: 35px;*/
+    display: block;
+    background: url('../images/thum2.jpg') no-repeat center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    transition: .3s;
+}
+
+.pro2 .tit {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    left: 0px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'founders_groteskregular';
+    text-transform: uppercase;
+}
+
+.pro2 .txt {
+    position: absolute;
+    bottom: -16px;
+    transform: translate(-50%,100%);
+    left: 50%;
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+.pro2 .year {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    right: 0px;
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+.second {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    margin-bottom: 144px;
+}
+
+.second li {
+    position: relative;
+    display: inline-block;
+    width: calc(50% - 18px);
+    height: auto;
+}
+
+.img3 {
+    display: block;
+    background: url('../images/thum3.jpg') no-repeat center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    transition: .3s;
+    z-index: 999;
+}
+
+.img1 {
+/*    position: absolute;*/
+/*    top: 35px;*/
+    display: block;
+    background: url('../images/thum1.jpg') no-repeat center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    transition: .3s;
+}
+
+.pro3 .tit {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    left: 0px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'founders_groteskregular';
+    text-transform: uppercase;
+}
+
+.pro3 .txt {
+    position: absolute;
+    bottom: -16px;
+    transform: translate(-50%,100%);
+    left: 50%;
+    font-size: 16px;
+    color: #999;
+    font-family: 'founders_grotesklight';
+}
+
+.pro3 .year {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    right: 0px;
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+.footer {
+    position: relative;
+    display: block;
+}
+
+.footer>hr {
+    position: absolute;
+    left: 35px;
+    right: 35px;
+    background: #bbbbbb;
+    height: 1px;
+    border: 0px;
+}
+
+.contact {
+    position: absolute;
+    top: 17px;
+    left: 35px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'founders_grotesklight';
+}
+
+.contact:after {
+    content: 'tndud7123@gmail.com';
+    position: absolute;
+    top: 27px;
+    left: 0px;
+    font-family: 'founders_groteskregular';
+}
+
+.update {
+    position: absolute;
+    top: 17px;
+    right: 35px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'founders_grotesklight';
+    text-transform: uppercase;
+}
+
+.update:after {
+    content: '11. 03. 2022';
+    position: absolute;
+    top: 27px;
+    right: 0px;
+    font-family: 'founders_groteskregular';
+}
+
+.copy {
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 200px;
+    color: #333;
+    font-family: 'founders_groteskbold';
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 60px;
+}
+
+.copy:hover {
+    color: #FF6B17;
+}
