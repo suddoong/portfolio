@@ -292,7 +292,8 @@ body {
 
 .img1:hover,
 .img2:hover,
-.img3:hover {
+.img3:hover,
+.img4:hover {
     transform: scale(.97);
 }
 
@@ -438,6 +439,17 @@ body {
     background-size: cover;
     transition: .3s;
 }
+.img5 {
+    /*    position: absolute;*/
+    /*    top: 35px;*/
+    display: block;
+    background: url('../images/thum5.png') no-repeat center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    transition: .3s;
+}
 .pro3 .tit {
     position: absolute;
     bottom: -16px;
@@ -467,6 +479,69 @@ body {
     font-size: 16px;
     color: #999;
     text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+.pro4 .tit {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    left: 0px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'founders_groteskregular';
+}
+
+.pro4 .txt {
+    position: absolute;
+    bottom: -16px;
+    transform: translate(-50%, 100%);
+    left: 50%;
+    font-size: 16px;
+    color: #999;
+    font-family: 'founders_grotesklight';
+}
+
+.pro4 .year {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    right: 0px;
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+
+.pro5 .year {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    right: 0px;
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: 'founders_grotesklight';
+}
+
+.pro5 .tit {
+    position: absolute;
+    bottom: -16px;
+    transform: translateY(100%);
+    left: 0px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'founders_groteskregular';
+}
+
+.pro5 .txt {
+    position: absolute;
+    bottom: -16px;
+    transform: translate(-50%, 100%);
+    left: 50%;
+    font-size: 16px;
+    color: #999;
     font-family: 'founders_grotesklight';
 }
 
@@ -512,7 +587,7 @@ body {
 }
 
 .update:after {
-    content: '11. 03. 2022';
+    content: '04 . 01 . 2025';
     position: absolute;
     top: 27px;
     right: 0px;
