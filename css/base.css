@@ -427,7 +427,17 @@ body {
     background-size: cover;
     transition: .3s;
 }
-
+.img4 {
+    /*    position: absolute;*/
+    /*    top: 35px;*/
+    display: block;
+    background: url('../images/thum4.png') no-repeat center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    transition: .3s;
+}
 .pro3 .tit {
     position: absolute;
     bottom: -16px;
