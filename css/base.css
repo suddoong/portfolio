@@ -449,6 +449,7 @@ body {
     padding-bottom: 100%;
     background-size: cover;
     transition: .3s;
+    cursor:default;
 }
 .pro3 .tit {
     position: absolute;
